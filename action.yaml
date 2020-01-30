@@ -1,0 +1,27 @@
+name: 'Splitsh'
+
+author: 'Antal Áron <antalaron@antalaron.hu>'
+
+description: 'Synchronises a subtree repository using splitsh-lite'
+
+inputs:
+    subtree:
+        description: 'Full name of the subtree repository (e.g. owner/repository)'
+        required: false
+    subtree_deploy_key:
+        description: 'Deploy key for the subtree repository'
+        required: false
+    split_branch:
+        description: 'Branch name to split'
+        required: false
+    split_prefix:
+        description: 'Prefix for the split'
+        required: true
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+
+branding:
+    icon: git-branch
+    color: green
