@@ -16,6 +16,7 @@ Key                | Description
 `split_deploy_key` | A public key part of a Deploy Key on the split repository
 `split_branch`     | Branch name to split
 `split_prefix`     | The directory to perform the split on
+`split_only_if`    | (`0`, `1` or repository name, default `1`) Pushes only if the origin is this, or `1`
 
 The * indicates mandatory input.
 
