@@ -35,6 +35,8 @@ jobs:
             -
                 name: Checkout
                 uses: actions/checkout@v2
+                with:
+                    fetch-depth: 0
             -
                 name: Release
                 uses: antalaron/action-splitsh@master
